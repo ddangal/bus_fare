@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16sp"
+    android:orientation="vertical"
+    tools:context="com.pawan.busfarebeta.ui.MainActivity">
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/bsfare"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:textSize="50sp"
+        android:layout_height="wrap_content"
+        android:text="Bus Fare" />
+     <Spinner
+         android:layout_width="0dp"
+         android:layout_height="match_parent"
+         android:layout_weight="1"
+         ></Spinner>
+
+    <ImageView
+        android:id="@+id/imgbus"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/sajha_bus"
+
+        />
+
+    <EditText
+        android:id="@+id/cur_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:hint="Current Place"
+        android:inputType="textEmailAddress"
+
+        />
+    <EditText
+        android:id="@+id/dest_plc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Destination Place"
+        android:textSize="25sp"
+        />
+    <RadioGroup
+        android:id="@+id/stu_nor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/student"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Students"
+            android:textSize="20sp"
+            />
+        <RadioButton
+            android:id="@+id/others"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Others"
+            android:textSize="20sp"
+            android:layout_marginBottom="120dp"
+            />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btnready"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ready"
+        android:textSize="20sp"
+        />
+
+
+</LinearLayout>
+
